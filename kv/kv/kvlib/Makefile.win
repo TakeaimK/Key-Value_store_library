@@ -1,0 +1,29 @@
+# Project: kvlib
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = kvlib.o
+LINKOBJ  = kvlib.o
+LIBS     = -L"D:/_portableprogram/Dev-Cpp/MinGW64/lib" -L"D:/_portableprogram/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/_portableprogram/Dev-Cpp/MinGW64/include" -I"D:/_portableprogram/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/_portableprogram/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/_portableprogram/Dev-Cpp/MinGW64/include" -I"D:/_portableprogram/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/_portableprogram/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/_portableprogram/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = kvlib.a
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(LINKOBJ)
+	ar r $(BIN) $(LINKOBJ)
+	ranlib $(BIN)
+
+kvlib.o: kvlib.c
+	$(CC) -c kvlib.c -o kvlib.o $(CFLAGS)

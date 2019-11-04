@@ -1,0 +1,1 @@
+./kv small/workload_open.txt small/workload_seq_put.txt small/workload_seq_get.txt small/workload_seq_del.txt small/workload_seq_put.txt small/workload_rnd_get.txt small/workload_rnd_overwrite.txt small/workload_open_close.txt small/workload_rnd_mix.txt small/workload_close.txt
