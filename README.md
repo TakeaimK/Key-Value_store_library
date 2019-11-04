@@ -14,9 +14,9 @@ Team Member : Lee Bum-won, Choi Se-jin, Lee Kang-min
 1. Download ALL file
 2. Copy /kvlib.c to /kv/kv/kvlib/ (Overwrite)
 3. Copy /kv/kv/kvlib to /kv.eval.dist/kv.eval/ (Overwrite)
-4. Compile kvlib.c
-5. Compile main.c
-6. Start kv.exe
+4. Open kvlib.dev and Compile
+5. Open klib.dev and Compile
+6. Start kvsmall.bat
 
 ---
 
